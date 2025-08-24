@@ -1,0 +1,26 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆圈 -->
+  <circle cx="150" cy="150" r="150" fill="url(#avatarGradient)"/>
+  
+  <!-- 人物轮廓 -->
+  <circle cx="150" cy="120" r="45" fill="rgba(255,255,255,0.9)"/>
+  
+  <!-- 身体部分 -->
+  <ellipse cx="150" cy="220" rx="70" ry="50" fill="rgba(255,255,255,0.9)"/>
+  
+  <!-- 装饰元素 -->
+  <circle cx="80" cy="80" r="3" fill="rgba(255,255,255,0.5)"/>
+  <circle cx="220" cy="90" r="2" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="90" cy="220" r="2.5" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="210" cy="210" r="3" fill="rgba(255,255,255,0.6)"/>
+  
+  <!-- 文字 -->
+  <text x="150" y="280" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="16" font-weight="500">张贤平</text>
+</svg>

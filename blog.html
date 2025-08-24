@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术博客 - 张贤平</title>
+    <meta name="description" content="张贤平的技术博客，分享编程经验、技术心得和学习笔记">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">张贤平</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="index.html#about" class="nav-link">关于我</a></li>
+                <li><a href="index.html#skills" class="nav-link">技能</a></li>
+                <li><a href="projects.html" class="nav-link">项目</a></li>
+                <li><a href="blog.html" class="nav-link active">博客</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>测试技术笔记</h1>
+                <p>分享我在射频测试自动化路上的心得体会、PyVISA应用技巧和测试工程经验</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 博客分类 -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">全部</button>
+                <button class="category-btn" data-category="pyvisa">PyVISA</button>
+                <button class="category-btn" data-category="rf-test">射频测试</button>
+                <button class="category-btn" data-category="automation">自动化</button>
+                <button class="category-btn" data-category="tutorial">教程</button>
+                <button class="category-btn" data-category="thoughts">思考</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 博客文章列表 -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid">
+                <!-- 文章 1 -->
+                <article class="post-card" data-category="pyvisa">
+                    <div class="post-image">
+                        <img src="assets/images/blog-react-hooks.jpg" alt="PyVISA实战指南" onerror="this.src='assets/images/blog-placeholder.jpg'">
+                        <div class="post-category">PyVISA</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar"></i>
+                                2024年8月20日
+                            </span>
+                            <span class="post-read-time">
+                                <i class="fas fa-clock"></i>
+                                12分钟阅读
+                            </span>
+                        </div>
+                        <h2><a href="posts/pyvisa-practical-guide.html">PyVISA实战指南：从入门到精通</a></h2>
+                        <p>深入讲解PyVISA的使用技巧和实战经验，包括仪器连接、SCPI命令发送、数据读取和错误处理等核心功能。</p>
+                        <div class="post-tags">
+                            <span class="tag">PyVISA</span>
+                            <span class="tag">SCPI</span>
+                            <span class="tag">仪器控制</span>
+                        </div>
+                        <div class="post-actions">
+                            <a href="posts/pyvisa-practical-guide.html" class="read-more">
+                                阅读更多
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="post-stats">
+                                <span><i class="fas fa-eye"></i> 1.8k</span>
+                                <span><i class="fas fa-heart"></i> 145</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 文章 2 -->
+                <article class="post-card" data-category="python">
+                    <div class="post-image">
+                        <img src="assets/images/blog-python-async.jpg" alt="Python异步编程" onerror="this.src='assets/images/blog-placeholder.jpg'">
+                        <div class="post-category">Python</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar"></i>
+                                2024年8月15日
+                            </span>
+                            <span class="post-read-time">
+                                <i class="fas fa-clock"></i>
+                                12分钟阅读
+                            </span>
+                        </div>
+                        <h2><a href="posts/python-async-programming.html">Python异步编程完全指南</a></h2>
+                        <p>从asyncio基础到高级应用，全面讲解Python异步编程的概念、实现和最佳实践，包括协程、事件循环和并发处理。</p>
+                        <div class="post-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">异步编程</span>
+                            <span class="tag">asyncio</span>
+                        </div>
+                        <div class="post-actions">
+                            <a href="posts/python-async-programming.html" class="read-more">
+                                阅读更多
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="post-stats">
+                                <span><i class="fas fa-eye"></i> 956</span>
+                                <span><i class="fas fa-heart"></i> 67</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 文章 3 -->
+                <article class="post-card" data-category="javascript">
+                    <div class="post-image">
+                        <img src="assets/images/blog-js-performance.jpg" alt="JavaScript性能优化" onerror="this.src='assets/images/blog-placeholder.jpg'">
+                        <div class="post-category">JavaScript</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar"></i>
+                                2024年8月10日
+                            </span>
+                            <span class="post-read-time">
+                                <i class="fas fa-clock"></i>
+                                10分钟阅读
+                            </span>
+                        </div>
+                        <h2><a href="posts/javascript-performance-optimization.html">JavaScript性能优化实战技巧</a></h2>
+                        <p>分享JavaScript性能优化的实用技巧，包括代码分割、懒加载、缓存策略、内存管理等前端性能优化方法。</p>
+                        <div class="post-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">性能优化</span>
+                            <span class="tag">前端</span>
+                        </div>
+                        <div class="post-actions">
+                            <a href="posts/javascript-performance-optimization.html" class="read-more">
+                                阅读更多
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="post-stats">
+                                <span><i class="fas fa-eye"></i> 1.5k</span>
+                                <span class="tag">前端</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 文章 4 -->
+                <article class="post-card" data-category="tutorial">
+                    <div class="post-image">
+                        <img src="assets/images/blog-git-workflow.jpg" alt="Git工作流" onerror="this.src='assets/images/blog-placeholder.jpg'">
+                        <div class="post-category">教程</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar"></i>
+                                2024年8月5日
+                            </span>
+                            <span class="post-read-time">
+                                <i class="fas fa-clock"></i>
+                                15分钟阅读
+                            </span>
+                        </div>
+                        <h2><a href="posts/git-workflow-guide.html">Git工作流最佳实践指南</a></h2>
+                        <p>详细介绍Git工作流的各种模式，包括Git Flow、GitHub Flow和GitLab Flow，以及团队协作的最佳实践。</p>
+                        <div class="post-tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">工作流</span>
+                            <span class="tag">团队协作</span>
+                        </div>
+                        <div class="post-actions">
+                            <a href="posts/git-workflow-guide.html" class="read-more">
+                                阅读更多
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="post-stats">
+                                <span><i class="fas fa-eye"></i> 890</span>
+                                <span><i class="fas fa-heart"></i> 54</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 文章 5 -->
+                <article class="post-card" data-category="thoughts">
+                    <div class="post-image">
+                        <img src="assets/images/blog-developer-growth.jpg" alt="程序员成长" onerror="this.src='assets/images/blog-placeholder.jpg'">
+                        <div class="post-category">思考</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar"></i>
+                                2024年7月30日
+                            </span>
+                            <span class="post-read-time">
+                                <i class="fas fa-clock"></i>
+                                6分钟阅读
+                            </span>
+                        </div>
+                        <h2><a href="posts/developer-growth-thoughts.html">程序员职业发展的思考与建议</a></h2>
+                        <p>分享我在程序员职业发展路上的思考，包括技能提升、职业规划、学习方法和保持技术热情的心得体会。</p>
+                        <div class="post-tags">
+                            <span class="tag">职业发展</span>
+                            <span class="tag">程序员</span>
+                            <span class="tag">思考</span>
+                        </div>
+                        <div class="post-actions">
+                            <a href="posts/developer-growth-thoughts.html" class="read-more">
+                                阅读更多
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="post-stats">
+                                <span><i class="fas fa-eye"></i> 756</span>
+                                <span><i class="fas fa-heart"></i> 92</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 文章 6 -->
+                <article class="post-card" data-category="tutorial">
+                    <div class="post-image">
+                        <img src="assets/images/blog-docker-guide.jpg" alt="Docker容器化" onerror="this.src='assets/images/blog-placeholder.jpg'">
+                        <div class="post-category">教程</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">
+                                <i class="fas fa-calendar"></i>
+                                2024年7月25日
+                            </span>
+                            <span class="post-read-time">
+                                <i class="fas fa-clock"></i>
+                                20分钟阅读
+                            </span>
+                        </div>
+                        <h2><a href="posts/docker-containerization-guide.html">Docker容器化完整教程</a></h2>
+                        <p>从Docker基础概念到实际应用，涵盖镜像构建、容器管理、Docker Compose使用和生产环境部署实践。</p>
+                        <div class="post-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">容器化</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                        <div class="post-actions">
+                            <a href="posts/docker-containerization-guide.html" class="read-more">
+                                阅读更多
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="post-stats">
+                                <span><i class="fas fa-eye"></i> 1.1k</span>
+                                <span><i class="fas fa-heart"></i> 73</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 分页 -->
+            <div class="pagination">
+                <a href="#" class="page-btn disabled">
+                    <i class="fas fa-chevron-left"></i>
+                    上一页
+                </a>
+                <div class="page-numbers">
+                    <a href="#" class="page-number active">1</a>
+                    <a href="#" class="page-number">2</a>
+                    <a href="#" class="page-number">3</a>
+                    <span class="page-dots">...</span>
+                    <a href="#" class="page-number">8</a>
+                </div>
+                <a href="#" class="page-btn">
+                    下一页
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 博客订阅 -->
+    <section class="blog-subscribe">
+        <div class="container">
+            <div class="subscribe-content">
+                <div class="subscribe-info">
+                    <h2>订阅我的博客</h2>
+                    <p>获取最新的技术文章和编程心得，每周精选内容直达您的邮箱</p>
+                </div>
+                <div class="subscribe-form">
+                    <form id="subscribeForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="输入您的邮箱地址" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                订阅
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>张贤平</h3>
+                    <p>全栈开发工程师，致力于创建优秀的数字产品</p>
+                    <div class="social-links">
+                        <a href="https://github.com/zhangxianping" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="projects.html">项目展示</a></li>
+                        <li><a href="blog.html">技术博客</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@zhangxianping.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 中国，上海</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 张贤平. 保留所有权利.</p>
+                <p>Built with ❤️ using GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

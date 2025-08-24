@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张贤平 - 个人主页</title>
+    <meta name="description" content="张贤平的个人主页，展示项目作品和技术博客">
+    <link rel="stylesheet" href="css/styles.css?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">张贤平</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="projects.html" class="nav-link">项目</a></li>
+                <li><a href="blog.html" class="nav-link">博客</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页展示区 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting">你好，我是</span>
+                    <span class="name">张贤平</span>
+                </h1>
+                <p class="hero-subtitle">射频芯片测试工程师 | Python自动化开发 | PyVISA专家</p>
+                <p class="hero-description">
+                    专注于射频芯片测试自动化，使用Python和PyVISA控制各种射频仪器进行精密测试。
+                    擅长开发高效的测试程序，提高测试效率和数据准确性，热爱分享测试技术和自动化经验。
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">
+                        <i class="fas fa-microchip"></i>
+                        测试项目
+                    </a>
+                    <a href="blog.html" class="btn btn-secondary">
+                        <i class="fas fa-blog"></i>
+                        测试笔记
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/zhangxianping" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar">
+                    <img src="assets/images/avatar.jpg" alt="张贤平的头像" onerror="this.src='assets/images/default-avatar.svg'">
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-element" data-speed="2">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <div class="floating-element" data-speed="3">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="floating-element" data-speed="4">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <div class="floating-element" data-speed="2.5">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于我</h2>
+                <p class="section-subtitle">了解更多我的背景和经历</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        我是一名专业的射频芯片测试工程师，拥有多年的射频测试自动化开发经验。
+                        专注于使用Python和PyVISA构建高效的测试系统，控制各种射频仪器进行精密测试。
+                    </p>
+                    <p>
+                        我相信技术应该服务于高质量的测试，致力于创造既稳定又高效的测试解决方案。
+                        在我的职业生涯中，我不断学习新的测试技术，追求测试精度和效率的完美平衡。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">年经验</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">完成项目</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">开源贡献</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="card-content">
+                            <h3>我的理念</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> 精密测试优先</li>
+                                <li><i class="fas fa-check"></i> 自动化驱动效率</li>
+                                <li><i class="fas fa-check"></i> 数据质量保障</li>
+                                <li><i class="fas fa-check"></i> 持续技术创新</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">技能专长</h2>
+                <p class="section-subtitle">我掌握的技术栈和工具</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3>射频测试</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">PyVISA</span>
+                        <span class="skill-tag">SCPI协议</span>
+                        <span class="skill-tag">网络分析仪</span>
+                        <span class="skill-tag">频谱分析仪</span>
+                        <span class="skill-tag">信号发生器</span>
+                        <span class="skill-tag">功率计</span>
+                        <span class="skill-tag">S参数测试</span>
+                        <span class="skill-tag">噪声测试</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python开发</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PyVISA</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">PyQt/Tkinter</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>测试工具</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Keysight</span>
+                        <span class="skill-tag">Rohde & Schwarz</span>
+                        <span class="skill-tag">Anritsu</span>
+                        <span class="skill-tag">LabVIEW</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Jenkins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>张贤平</h3>
+                    <p>射频芯片测试工程师，致力于创建高效的测试解决方案</p>
+                    <div class="social-links">
+                        <a href="https://github.com/zhangxianping" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="projects.html">项目展示</a></li>
+                        <li><a href="blog.html">技术博客</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@zhangxianping.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 中国，上海</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 张贤平. 保留所有权利.</p>
+                <p>Built with ❤️ using GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=3"></script>
+</body>
+</html>

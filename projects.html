@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目展示 - 张贤平</title>
+    <meta name="description" content="张贤平的项目作品展示，包含Web开发、移动应用和开源项目">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">张贤平</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="index.html#about" class="nav-link">关于我</a></li>
+                <li><a href="index.html#skills" class="nav-link">技能</a></li>
+                <li><a href="projects.html" class="nav-link active">项目</a></li>
+                <li><a href="blog.html" class="nav-link">博客</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>测试项目展示</h1>
+                <p>这里展示了我的射频芯片测试项目，涵盖PyVISA自动化、仪器控制和数据分析</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目过滤器 -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="automation">测试自动化</button>
+                <button class="filter-btn" data-filter="pyvisa">PyVISA应用</button>
+                <button class="filter-btn" data-filter="analysis">数据分析</button>
+                <button class="filter-btn" data-filter="tools">工具开发</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目网格 -->
+    <section class="projects">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- 项目 1 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-image">
+                        <img src="assets/images/project-ecommerce.jpg" alt="射频芯片自动化测试平台" onerror="this.src='assets/images/project-placeholder.jpg'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>射频芯片自动化测试平台</h3>
+                        <p>基于Python和PyVISA的射频芯片全自动测试系统，支持多种射频参数测试，包括S参数、噪声系数、功率增益等关键指标。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyVISA</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                2024年3月
+                            </span>
+                            <span class="project-status completed">
+                                <i class="fas fa-check-circle"></i>
+                                已完成
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 2 -->
+                <div class="project-card" data-category="pyvisa">
+                    <div class="project-image">
+                        <img src="assets/images/project-dashboard.jpg" alt="多仪器控制系统" onerror="this.src='assets/images/project-placeholder.jpg'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>多仪器协同控制系统</h3>
+                        <p>使用PyVISA统一控制网络分析仪、频谱分析仪、信号发生器等多台仪器，实现复杂射频测试序列的自动化执行。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyVISA</span>
+                            <span class="tech-tag">SCPI</span>
+                            <span class="tech-tag">Threading</span>
+                            <span class="tech-tag">PyQt5</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                2024年1月
+                            </span>
+                            <span class="project-status completed">
+                                <i class="fas fa-check-circle"></i>
+                                已完成
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 3 -->
+                <div class="project-card" data-category="analysis">
+                    <div class="project-image">
+                        <img src="assets/images/project-mobile-app.jpg" alt="射频数据分析工具" onerror="this.src='assets/images/project-placeholder.jpg'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>射频测试数据分析工具</h3>
+                        <p>专业的射频测试数据处理和可视化工具，支持S参数分析、史密斯圆图生成、频域时域变换等功能。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SciPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                2023年11月
+                            </span>
+                            <span class="project-status completed">
+                                <i class="fas fa-check-circle"></i>
+                                已完成
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 4 -->
+                <div class="project-card" data-category="tools">
+                    <div class="project-image">
+                        <img src="assets/images/project-ui-library.jpg" alt="测试报告生成器" onerror="this.src='assets/images/project-placeholder.jpg'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>自动化测试报告生成器</h3>
+                        <p>基于Python的测试报告自动生成工具，支持多种数据格式导入，生成专业的PDF测试报告和数据图表。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ReportLab</span>
+                            <span class="tech-tag">Jinja2</span>
+                            <span class="tech-tag">Openpyxl</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                2023年9月
+                            </span>
+                            <span class="project-status active">
+                                <i class="fas fa-code-branch"></i>
+                                维护中
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 5 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-image">
+                        <img src="assets/images/project-cli-tool.jpg" alt="校准程序" onerror="this.src='assets/images/project-placeholder.jpg'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>射频仪器自动校准系统</h3>
+                        <p>针对网络分析仪和信号发生器的自动校准程序，通过PyVISA实现多台仪器的批量校准和统一管理。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyVISA</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">ConfigParser</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                2023年7月
+                            </span>
+                            <span class="project-status completed">
+                                <i class="fas fa-check-circle"></i>
+                                已完成
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 6 -->
+                <div class="project-card" data-category="pyvisa">
+                    <div class="project-image">
+                        <img src="assets/images/project-blog-platform.jpg" alt="SCPI命令库" onerror="this.src='assets/images/project-placeholder.jpg'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>通用SCPI命令库</h3>
+                        <p>基于Python的SCPI命令封装库，支持主流射频仪器厂商的仪器控制，提供统一的API接口和错误处理机制。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyVISA</span>
+                            <span class="tech-tag">Setuptools</span>
+                            <span class="tech-tag">Sphinx</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="fas fa-calendar"></i>
+                                2024年2月
+                            </span>
+                            <span class="project-status in-progress">
+                                <i class="fas fa-spinner"></i>
+                                开发中
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 统计信息 -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">完成项目</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">开源项目</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">GitHub Stars</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">合作客户</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA区域 -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>有项目想法？</h2>
+                <p>让我们一起讨论如何将您的想法变成现实</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        联系我
+                    </a>
+                    <a href="blog.html" class="btn btn-secondary">
+                        <i class="fas fa-blog"></i>
+                        查看博客
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>张贤平</h3>
+                    <p>全栈开发工程师，致力于创建优秀的数字产品</p>
+                    <div class="social-links">
+                        <a href="https://github.com/zhangxianping" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="projects.html">项目展示</a></li>
+                        <li><a href="blog.html">技术博客</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@zhangxianping.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 中国，上海</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 张贤平. 保留所有权利.</p>
+                <p>Built with ❤️ using GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
